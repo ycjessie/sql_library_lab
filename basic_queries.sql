@@ -39,7 +39,9 @@ INSERT INTO books( title, publication_date, author_id)
 VALUES ('Challenges','2020', 13);
 
 -- Update one of your books to have a new title
-
+update books set title='Wow! how can I solve this?'
+where title='wow';
 -- Delete your books
-
+delete from books where author_id=13;
 -- Delete your author entry
+delete from authors where id=13;
