@@ -2,19 +2,23 @@
 -- Unless otherwise stated, all queries should return all columns
 
 -- Get all information about all authors
-
+select * from authors;
 -- Get just the name and birth year of all authors
-
+select name,birth_year from authors;
 -- Get all authors born in the 20th centruy or later
-
+select * from authors
+where birth_year >2000;
 -- Get all authors born in the USA
-
+select * from authors
+where nationality like 'United States%'
 -- Get all books published on 1985
-
+select * from books
+where publication_date='1985';
 -- Get all books published before 1989
-
+select * from books
+where publication_date<1989;
 -- Get just the title of all books.
-
+select title from books;
 -- Get just the year that 'A Dance with Dragons' was published
   -- Cry when you realize how long it's been
 
